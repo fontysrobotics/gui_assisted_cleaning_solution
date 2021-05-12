@@ -1,6 +1,6 @@
-# Web server 
+# gui_assisted_cleaning_solution 
 
-Package for the user interface of the Assisted Cleaning Solution robot.
+Package for the web user interface of the Assisted Cleaning Solution robot.
 
 ## Launch website 
 
