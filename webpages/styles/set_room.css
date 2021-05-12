@@ -1,0 +1,96 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0px 5px;
+}
+body{
+    background-color: black;
+}
+
+/* the previous button */
+.previous{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 0px 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #64c9a7; 
+    position: absolute;
+    margin-left: 358px;
+    margin-top: 3px;
+}
+
+/* the text at the top of the page */
+.text{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid #64c9a7;
+    padding: 10px 0px;
+    border-radius: 18px;
+    width: 338px;
+}
+
+/* the text in the grid container */
+.text_grid{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* the grid with two collums */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 390px;
+    color: white;
+    margin-top: 15px;
+}
+.grid-item{
+    width: 195px;
+}
+
+/* the list design */
+ol{
+    padding-left: 25px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+li{
+    background-color: black;
+    font-size: 22px;
+    border-radius: 9px;
+    color: white;
+    border: 2px solid #64c9a7;
+    padding: 0px 5px;
+    width: 15px;
+}
+.possible {
+    background-color: black;
+    font-size: 22px;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid #64c9a7;
+    margin-left: 10px;
+    margin-top: 2px;
+    padding: 0px 10px;
+    width: 140px;
+    height: 35px;
+}
+
+/* language buttons on setting page */
+.language{
+    background-color: black; 
+    color: white;
+    font-size: 18px;
+    border: 2px solid #64c9a7; 
+    border-radius: 18px;
+    padding: 10px 0px;
+    width: 400px;
+}

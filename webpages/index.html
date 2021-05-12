@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="styles/index.css?version=7">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- javascript files  to  show robot on map-->
+        <script type="text/javascript" src="http://static.robotwebtools.org/EaselJS/current/easeljs.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/ros2djs/current/ros2d.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <script src="scripts/Ros2D.js"></script>
+        <script src="scripts/robot_on_map.js"></script>  
+        <script src="scripts/battery.js"></script>
+        <script src="scripts/obstacle.js"></script>
+        <script src="scripts/language.js"></script>
+        <script src="scripts/task_msg.js"></script>
+        
+    </head>
+
+    <body>
+        <!-- The text to show the state of the robot in the javascript file the state gets changed -->
+        <div class="grid-container">
+            <button class = "fa fa-gear setting" style="font-size: 30px;" onclick="location.href='setting.html';"></button>
+            <div></div>
+            <div class="battery">
+                <div class="battery-level"></div>
+            </div>
+        </div>
+        <div id="stateRobot" class="text"></div>
+        
+
+        <!-- Show map with robot or the video of the webcam -->
+        <div id="map"></div>
+        <video id="videoElement" autoplay="true" width="400" height="400" style="display: none;"></video>
+       
+        <!-- Buttons to choose mode -->
+        <div class="btn-group">
+            <button class = task_buttons id="text0" onclick="location.href='task.html';"></button>
+            <button class = task_buttons id="text1" onclick="change_state(5)"></button>
+            <button class = task_buttons id="text2" onclick="location.href='manual_mode.html';"></button>
+        </div>
+
+        <!-- the slider to switch the view between robot on map and webcam -->
+        <div>
+            <div>
+                <label class="switch">
+                    <input type="checkbox" onclick="switchView()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <!-- The stop button and the set room button -->
+            <div><button class="stop fa fa-hand-stop-o" style="font-size:40px" onclick="change_state(0)"></button></div>
+            <div><button onclick="location.href='set_room.html'" class="setRoom" id="text3"></button></div>
+        </div>
+        <div style="display: none;" class="pop-outer">
+            <div class="pop-inner">
+                <div class="text-pop">
+                    <h2 id="text4"></h2>
+                </div>
+                <div class="task_group">
+                    <div><button class="task turn" id="text5"></button></div>
+                    <div><button class="task continue" id="text6"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The javascript file that manages everything except robot on map -->
+        <script src="scripts/index.js"></script>
+        <script src="scripts/view.js"></script>
+    </body>
+</html>

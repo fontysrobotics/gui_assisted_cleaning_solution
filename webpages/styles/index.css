@@ -1,0 +1,203 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0px 5px;
+}
+body{
+    background-color: black;
+}
+
+.grid-container {
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 12% auto 28% ;
+}
+.setting{
+    background-color: black;
+    border: 2px solid #64c9a7;
+    color: white;
+    border-radius: 10px;
+}
+.battery:after {
+    background-color: black;
+    border: 2px solid #64c9a7;
+    content: "";
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: -6px;
+    top: 6px;
+    width: 6px;
+    border-radius: 3px;
+}
+.battery {
+    background-color: black;
+    border: 2px solid #64c9a7;
+    height: 32px;
+    width: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+.battery .battery-level {
+    background-color: #666;
+    height: 100%;
+    border-radius: 3px;
+}
+.battery-level.high {
+    background-color: #64c9a7;
+}
+.battery-level.low {
+    background-color: #e62639;
+}
+.battery .battery-level {
+    color: white;
+    text-align: center;
+}
+/* the text for the top of the page */
+.text{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid #64c9a7;
+    padding: 8px 0px;
+    border-radius: 18px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+/* the 3 buttons in a group */
+.task_buttons {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    width: 133px;
+    border: 2px solid #64c9a7;
+    border-radius: 20px;
+    padding: 0px 2px;
+    cursor: pointer;
+    float: left;
+    margin-top: 15px;
+    height: 45px;
+}
+.btn-group {
+    display: table;
+}
+
+/* the slider switch for switching view between map and camera */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 45px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 38px;
+    width: 38px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #64c9a7;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #64c9a7c9;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* the stop button */
+.stop{
+    border-radius: 50%;
+    color: white;
+    border: 2px solid #64c9a7;
+    background: radial-gradient(#f3293d, #e62639);
+    box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.15) inset;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 165px;
+    float: left;
+}
+
+/* the set room button */
+.setRoom{
+    background-color: #64c9a7; 
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    border: 2px solid #64c9a7; 
+    border-radius: 34px;
+    height: 45px;
+    padding: 0px 2px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+.pop-outer{
+    background-color: 0,0,0,5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pop-inner{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.text-pop{
+    font-size: 18px;
+    width: 396px;
+    text-align: center;
+    color: white;
+    border: 2px solid #64c9a7;
+    padding: 10px 0px;
+    border-radius: 18px;
+}
+.task_group{
+    display: block;
+}
+.task{
+    background-color: black; 
+    color: white;
+    font-size: 18px;
+    border: 2px solid #64c9a7; 
+    border-radius: 18px;
+    padding: 10px 0px;
+    width: 400px;
+}

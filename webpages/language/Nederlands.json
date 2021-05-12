@@ -1,0 +1,23 @@
+{
+    "task": "Taak",
+    "next room": "Volgende Kamer",
+    "manual mode": "Handmatige Besturing",
+    "set rooms": "Instellen Kamers",
+    "unknown object detected": "Onbekend Obstakel Gevonden",
+    "make turn": "Maak Bocht",
+    "continue": "Doorgaan",
+    "select task": "Selecteer Taak",
+    "clean plinths": "Plinten Schoonmaken",
+    "clean chairs": "Stoelen Schoonmaken",
+    "go to charging station": "Ga Naar Oplaadstation",
+    "go to default place": "Ga Naar Standaard Plek",
+    "select rooms": "Selecteer Kamers",
+    "possible rooms": "Mogelijke Kamers",
+    "rooms to go to": "Kamers om heen te gaan",
+    "waiting":"Aan Het Wachten",
+    "cleaning plinths":"Schoonmaken Plinten",
+    "cleaning chairs":"Schoonmaken Stoelen",
+    "to charging station":"Naar Oplaadstation",
+    "to default place":"Naar Standaard Plaats",
+    "to next room":"Naar Volgende Kamer"
+}

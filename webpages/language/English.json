@@ -1,0 +1,23 @@
+{
+    "task": "Task",
+    "next room": "Next Room",
+    "manual mode": "Manual Mode",
+    "set rooms": "Set Rooms",
+    "unknown object detected": "Unknown Object Detected",
+    "make turn": "Make turn",
+    "continue": "Continue",
+    "select task": "Select Task",
+    "clean plinths": "Clean Plinths",
+    "clean chairs": "Clean Chairs",
+    "go to charging station": "Go to Charging Station",
+    "go to default place": "Go to Default Place",
+    "select rooms": "Select Rooms",
+    "possible rooms": "Possible Rooms",
+    "rooms to go to": "Rooms To Go To",
+    "waiting":"Waiting",
+    "cleaning plinths":"Cleaning Plinths",
+    "cleaning chairs":"Cleaning Chairs",
+    "to charging station":"To Charging Station",
+    "to default place":"To Default Place",
+    "to next room":"To Next Room"
+}

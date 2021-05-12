@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/set_room.css?version=6">
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="scripts/language.js"></script>
+        <script src="scripts/view.js"></script>
+    </head>
+
+    <body>
+        <!-- The text, the previous page button and the canvas to hold the office layout with nummering -->
+        <div><button class="previous" onclick="history.back()">&#8249;</button></div>
+        <div><h1 class="text" id="text12"></h1></div>
+        <div><canvas id="floorplanImage" width="400" height="400"></canvas></div>
+        
+        <!-- grid so the 4 diffrent elements are display next and underneath each other -->
+        <div class="grid-container">
+
+            <!-- the top row two collums with text -->
+            <div class="grid-item"><p class="text_grid" id="text13"></p></div>
+            <div class="grid-item"><p class="text_grid" id="text14"></p></div>
+
+            <!-- The list with possible rooms and button to add and remove the room from the to go to list -->
+            <div class="grid-item"><b></b></div>
+
+            <!-- the list that holds the rooms to go to mostly javascript is important -->
+            <div class="grid-item"><ol id="roomsToGoTo"></ol></div>
+                
+        </div>
+        <script src="scripts/set_room.js"></script>
+    </body>
+</html>

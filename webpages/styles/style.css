@@ -1,0 +1,99 @@
+/* the leftover design pieces */
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0px 5px;
+}
+body{
+    background-color: black;
+}
+
+/* previous button */
+.previous{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 0px 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #64c9a7; 
+    position: absolute;
+    margin-left: 358px;
+    margin-top: 3px;
+}
+
+/* the text at the top of the pages */
+.head_text{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid #64c9a7;
+    padding: 10px 0px;
+    border-radius: 18px;
+    width: 338px;
+}
+/* the task design  */
+.task_group{
+    display: block;
+}
+.task{
+    background-color: black; 
+    color: white;
+    font-size: 18px;
+    border: 2px solid #64c9a7; 
+    border-radius: 18px;
+    padding: 10px 0px;
+    width: 400px;
+}
+/* smaller text over the rest of the pages */
+.text{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: 4px solid #64c9a7;
+    padding: 10px 0px;
+    border-radius: 18px;
+    width: 400px;
+}
+/* grid for the manual mode */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 400px;
+    color: white;
+    margin-top: 3px;
+}
+/* standard arrow design */
+.move_robot{
+    background-color: black; 
+    color: white;
+    font-size: 80px;
+    width: 100px;
+    border: 2px solid #64c9a7; 
+    border-radius: 50%;
+    cursor: pointer; 
+    float: left;
+}
+/* stop button design */
+.stop{
+    border-radius: 50%;
+    color: white;
+    border: 2px solid #64c9a7;
+    background: radial-gradient(#f3293d, #e62639);
+    box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.15) inset;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* the position of the forward and backward button*/
+.forward{
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.backward{
+    margin-left: 150px;
+    margin-top: 30px;
+}
