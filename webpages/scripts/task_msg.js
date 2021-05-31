@@ -12,14 +12,19 @@ ros.on("connection", function(){
 
     listener_task.subscribe(function(message) {
         var taskState = message.task
-        if(taskState <= -2){
-            taskState = taskState*-1 - 1
-
+        if (taskState <= -2){
+            taskState = taskState*-1 +14
         }
-        else if (taskState > 5){
-            taskState = 5
+        else if (taskState == 0){
+            taskState = 15
         }
-        language_state_text(taskState + 15)
+        else if ((taskState >= 1) || (taskState <= 2)){
+            taskState = taskState + 17
+        }
+        else if (taskState > 3){
+            taskState = 20
+        }
+        language_state_text(taskState)
     });
 })
 
