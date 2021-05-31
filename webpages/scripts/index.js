@@ -1,18 +1,8 @@
 // updating the state of robot when pressed and setting the state in the text on main page
 var state = parseInt(localStorage.getItem("state"))
-if (state <= -2){
-    language_state_text(state*-1 + 14)
+language_state_text(state*-1 + 24)
+if ((state == 1) || (state == 2) || (state <= -2)){
     pub_task(state)
-}
-else if (state == 0){
-    language_state_text(15)
-}
-else if ((state >= 1) || (state <= 2)){
-    language_state_text(state + 17)
-    pub_task(state)
-}
-else if (state == 3){ // To Next Room
-    language_state_text(20)
 }
 
 // ---------------------------------------------------------------------------------------
