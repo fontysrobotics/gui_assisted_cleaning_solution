@@ -1,11 +1,17 @@
 // updating the state of robot when pressed and setting the state in the text on main page
 var state = parseInt(localStorage.getItem("state"))
-if (state < 5){
-    language_state_text(state + 15)
+if (state <= -2){
+    language_state_text(state*-1 + 14)
     pub_task(state)
 }
-if (state == 5){ // To Next Room
+else if (state == 0){
+    language_state_text(15)
+}
+else if (state == 5){ // To Next Room
     language_state_text(20)
+}
+else{
+    language_state_text(state + 15)
 }
 
 // ---------------------------------------------------------------------------------------
@@ -24,11 +30,11 @@ function language_state_text(index){
     })
 }
 // ---------------------------------------------------------------------------------------
-// change state when next room or stop is pressed
+// change state when next room, stop or task is pressed
 function change_state(value){
     localStorage.setItem("state", value)
 
-    if (value <= 0){
+    if (value == 0){
         pub_task(0)
     }
     else if (value >= 5){

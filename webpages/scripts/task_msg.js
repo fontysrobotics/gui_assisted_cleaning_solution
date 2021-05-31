@@ -12,7 +12,11 @@ ros.on("connection", function(){
 
     listener_task.subscribe(function(message) {
         var taskState = message.task
-        if (taskState > 5){
+        if(taskState <= -2){
+            taskState = taskState*-1 - 1
+
+        }
+        else if (taskState > 5){
             taskState = 5
         }
         language_state_text(taskState + 15)
