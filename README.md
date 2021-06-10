@@ -17,10 +17,21 @@ Then go to the firefox browser to the site http://localhost:7000/
 1. Go to view.js. 
 2. Change the value of the variable floorplanImage to the location of the new image.
 
-### Change number of rooms
+### Change or add number of rooms
 
 1. Go to set_room.js. 
 2. Change the array of the variable possibleRooms to an array list containing all the numbers of the rooms.
+
+### Add new task
+1. Go to the language folder.
+2. Add in all the language files a line with the task name. Room for the new tasks is prepared and is named empty.
+3. Add in all the language files at the end a line with the state the room is in while performing the tasks.
+4. Go to task.html.
+5. Add an extra line for the button. Like the other buttons of the task.
+6. Leave the class the same.
+7. Change the id to text+number. Number=line-2. The line is the line in the language file of the task.
+8. Change the value to the next negative value that is free. So, if the previous one is -4 than the next value should be -5.
+9. Leave the rest of the line the same.
 
 ### Add language
 
