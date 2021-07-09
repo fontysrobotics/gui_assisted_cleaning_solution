@@ -77,6 +77,11 @@ Then go to the firefox browser to the site http://localhost:7000/
                     + ', w: ' + message.pose.pose.orientation.w;
             });
 
+### Change video view of the manual mode to map view
+
+1. Go to manual_mode.html
+2. Comment in the div with id map
+3. Comment out the video with id videoElement
 
 ## Images
 
