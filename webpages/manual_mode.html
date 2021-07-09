@@ -3,28 +3,35 @@
         <link rel="stylesheet" href="/styles/style.css?version=8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <script type="text/javascript" src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/EaselJS/current/easeljs.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/ros2djs/current/ros2d.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
         <script src="scripts/manual_mode.js"></script>
 
     </head>
+        <!-- <div id="map"></div> -->
         <video id="videoElement" autoplay="true" width="400" height="250" style="padding-bottom: 20px;padding-top: 20px;"></video>
         <div><button class="previous" onclick="history.back()">&#8249;</button></div>
 
         <div class="grid-container">    
 
-            <div><button onmousedown="move(1, 0)" onmouseup="move(0,0)" class="move_robot forward">&#8593;</button></div>
+            <div><button onmousedown="move(0.3, 0)" onmouseup="move(0,0)" class="move_robot forward">&#8593;</button></div>
 
             <div>
-                <button onmousedown="move(0, 1)" onmouseup="move(0,0)" class="move_robot">&#10226;</button>
+                <button onmousedown="move(0.1, 1)" onmouseup="move(0,0)" class="move_robot">&#10226;</button>
                 <button onclick="move(0, 0), change_state(0)" class="stop fa fa-hand-stop-o" style="font-size:50px"></button>
-                <button onmousedown="move(0, -1)" onmouseup="move(0,0)"class="move_robot">&#10227;</button>
+                <button onmousedown="move(0.1, -1)" onmouseup="move(0,0)"class="move_robot">&#10227;</button>
             </div>
 
-            <div><button onmousedown="move(-1, 0)" onmouseup="move(0,0)" class="move_robot backward">&#8595;</button></div>
+            <div><button onmousedown="move(-0.3, 0)" onmouseup="move(0,0)" class="move_robot backward">&#8595;</button></div>
         </div>
+
+        <script src="scripts/robot_on_map.js"></script>  
+        <script src="scripts/task_msg.js"></script>
         <script src="scripts/index.js"></script>
         <script src="scripts/view.js"></script>
     </body>
